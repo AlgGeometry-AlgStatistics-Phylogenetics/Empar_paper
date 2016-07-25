@@ -1,179 +1,0 @@
-******************************************************************
-*       Bio++ Maximum Likelihood Computation, version 1.6.0      *
-*                                                                *
-* Authors: J. Dutheil                       Last Modif. 29/01/13 *
-*          B. Boussau                                            *
-*          L. Guéguen                                            *
-*          M. Groussin                                           *
-******************************************************************
-
-Parsing options:
-Parsing file bppsuite1.txt for options.
-Alphabet type .........................: DNA
-Sequence file .........................: align.fa
-Sequence format .......................: FASTA file
-Sites to use...........................: nogap
-Sites without gap......................: 1000
-Number of sequences....................: 4
-Number of sites........................: 1000
-Input tree.............................: user
-Tree file..............................: top1.tree
-Number of leaves.......................: 4
-Wrote tree to file ....................: out_tree1.dnd
-Branch lengths set to..................: 0.1
-Branch lengths.........................: Equal
-Heterogeneous model....................: general
-Number of distinct models..............: 5
-Substitution model.....................: L95
-Root frequencies ......................: Full
-Stationarity assumed...................: no
-Substitution model.....................: L95
-Frequencies Initialization for model...: None
-WARNING!!! Parameter L95.alpha not specified. Default used instead: 0.5
-Parameter found........................: model1.L95.alpha=0.5
-WARNING!!! Parameter L95.beta not specified. Default used instead: 0.5
-Parameter found........................: model1.L95.beta=0.5
-WARNING!!! Parameter L95.gamma not specified. Default used instead: 0.5
-Parameter found........................: model1.L95.gamma=0.5
-WARNING!!! Parameter L95.kappa not specified. Default used instead: 1
-Parameter found........................: model1.L95.kappa=1
-WARNING!!! Parameter L95.theta not specified. Default used instead: 0.5
-Parameter found........................: model1.L95.theta=0.5
-WARNING!!! Parameter model1.nodes_id not specified. Default used instead: 0
-Model1 is associated to................: 1 node(s).
-Substitution model.....................: L95
-Frequencies Initialization for model...: None
-WARNING!!! Parameter L95.alpha not specified. Default used instead: 0.5
-Parameter found........................: model2.L95.alpha=0.5
-WARNING!!! Parameter L95.beta not specified. Default used instead: 0.5
-Parameter found........................: model2.L95.beta=0.5
-WARNING!!! Parameter L95.gamma not specified. Default used instead: 0.5
-Parameter found........................: model2.L95.gamma=0.5
-WARNING!!! Parameter L95.kappa not specified. Default used instead: 1
-Parameter found........................: model2.L95.kappa=1
-WARNING!!! Parameter L95.theta not specified. Default used instead: 0.5
-Parameter found........................: model2.L95.theta=0.5
-WARNING!!! Parameter model2.nodes_id not specified. Default used instead: 1
-Model2 is associated to................: 1 node(s).
-Substitution model.....................: L95
-Frequencies Initialization for model...: None
-WARNING!!! Parameter L95.alpha not specified. Default used instead: 0.5
-Parameter found........................: model3.L95.alpha=0.5
-WARNING!!! Parameter L95.beta not specified. Default used instead: 0.5
-Parameter found........................: model3.L95.beta=0.5
-WARNING!!! Parameter L95.gamma not specified. Default used instead: 0.5
-Parameter found........................: model3.L95.gamma=0.5
-WARNING!!! Parameter L95.kappa not specified. Default used instead: 1
-Parameter found........................: model3.L95.kappa=1
-WARNING!!! Parameter L95.theta not specified. Default used instead: 0.5
-Parameter found........................: model3.L95.theta=0.5
-WARNING!!! Parameter model3.nodes_id not specified. Default used instead: 2
-Model3 is associated to................: 1 node(s).
-Substitution model.....................: L95
-Frequencies Initialization for model...: None
-WARNING!!! Parameter L95.alpha not specified. Default used instead: 0.5
-Parameter found........................: model4.L95.alpha=0.5
-WARNING!!! Parameter L95.beta not specified. Default used instead: 0.5
-Parameter found........................: model4.L95.beta=0.5
-WARNING!!! Parameter L95.gamma not specified. Default used instead: 0.5
-Parameter found........................: model4.L95.gamma=0.5
-WARNING!!! Parameter L95.kappa not specified. Default used instead: 1
-Parameter found........................: model4.L95.kappa=1
-WARNING!!! Parameter L95.theta not specified. Default used instead: 0.5
-Parameter found........................: model4.L95.theta=0.5
-WARNING!!! Parameter model4.nodes_id not specified. Default used instead: 3
-Model4 is associated to................: 1 node(s).
-Substitution model.....................: L95
-Frequencies Initialization for model...: None
-WARNING!!! Parameter L95.alpha not specified. Default used instead: 0.5
-Parameter found........................: model5.L95.alpha=0.5
-WARNING!!! Parameter L95.beta not specified. Default used instead: 0.5
-Parameter found........................: model5.L95.beta=0.5
-WARNING!!! Parameter L95.gamma not specified. Default used instead: 0.5
-Parameter found........................: model5.L95.gamma=0.5
-WARNING!!! Parameter L95.kappa not specified. Default used instead: 1
-Parameter found........................: model5.L95.kappa=1
-WARNING!!! Parameter L95.theta not specified. Default used instead: 0.5
-Parameter found........................: model5.L95.theta=0.5
-WARNING!!! Parameter model5.nodes_id not specified. Default used instead: 4
-Model5 is associated to................: 1 node(s).
-WARNING!!! Parameter nonhomogeneous.alias not specified. Default used instead: 
-Distribution...........................: Constant
-Number of classes......................: 1
-- Category 0 (Pr = 1) rate.............: 1
-Rate distribution......................: Constant
-Number of classes......................: 1
-Likelihood recursion...................: simple
-Initializing data structure............: Done.
-Number of distinct sites...............: 123
-Initial log likelihood.................: -5465.46913470855
-WARNING!!! Parameter optimization.verbose not specified. Default used instead: 2
-Message handler........................: none
-Profiler...............................: none
-Max # ML evaluations...................: 1000
-Tolerance..............................: 1e-05
-Optimize topology......................: no
-Optimization method....................: FullD
-Algorithm used for derivable parameters: Newton
-Reparametrization......................: no
-Molecular clock........................: None
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Singularity during diagonalization. Taylor series used instead.
-Optimizing... / 1Optimizing... - 2Optimizing... \ 3Optimizing... - 4Optimizing... / 5Optimizing... - 6Optimizing... \ 7Optimizing... - 8Optimizing... / 9Optimizing... - 10Optimizing... \ 11Optimizing... - 12Optimizing... / 13Optimizing... - 14Optimizing... \ 15Optimizing... - 16Optimizing... / 17Optimizing... - 18Optimizing... \ 19Optimizing... - 20Optimizing... / 21Optimizing... - 22Optimizing... \ 23Optimizing... - 24Optimizing... / 25Optimizing... - 26Optimizing... \ 27Optimizing... - 28Optimizing... / 29Optimizing... - 30Optimizing... \ 31Optimizing... - 32Optimizing... / 33Optimizing... - 34Optimizing... \ 35Optimizing... - 36Optimizing... / 37Optimizing... - 38Optimizing... \ 39Optimizing... - 40Optimizing... / 41Optimizing... - 42Optimizing... \ 43Optimizing... - 44Optimizing... / 45Optimizing... - 46Optimizing... \ 47Optimizing... - 48Optimizing... / 49Optimizing... - 50Optimizing... \ 51Optimizing... - 52Optimizing... / 53Optimizing... - 54Optimizing... \ 55Optimizing... - 56Optimizing... / 57Optimizing... - 58Optimizing... \ 59Optimizing... - 60Optimizing... / 61Optimizing... - 62Optimizing... \ 63Optimizing... - 64Optimizing... / 65Optimizing... - 66Optimizing... \ 67Optimizing... - 68Optimizing... / 69Optimizing... - 70Optimizing... \ 71Optimizing... - 72Optimizing... / 73Optimizing... - 74Optimizing... \ 75Optimizing... - 76Optimizing... / 77Optimizing... - 78Optimizing... \ 79Optimizing... - 80Optimizing... / 81Optimizing... - 82Optimizing... \ 83Optimizing... - 84Optimizing... / 85Optimizing... - 86Optimizing... \ 87Optimizing... - 88Optimizing... / 89Optimizing... - 90Optimizing... \ 91Optimizing... - 92Optimizing... / 93Optimizing... - 94Optimizing... \ 95Optimizing... - 96Optimizing... / 97Optimizing... - 98Optimizing... \ 99Optimizing... - 100Optimizing... / 101Optimizing... - 102Optimizing... \ 103Optimizing... - 104Optimizing... / 105Optimizing... - 106Optimizing... \ 107Optimizing... - 108Optimizing... / 109Optimizing... - 110Optimizing... \ 111Optimizing... - 112Optimizing... / 113Optimizing... - 114Optimizing... \ 115Optimizing... - 116Optimizing... / 117Optimizing... - 118Optimizing... \ 119Optimizing... - 120Optimizing... / 121Optimizing... - 122Optimizing... \ 123Optimizing... - 124Optimizing... / 125Optimizing... - 126Optimizing... \ 127Optimizing... - 128Optimizing... / 129Optimizing... - 130Optimizing... \ 131Optimizing... - 132Optimizing... / 133Optimizing... - 134Optimizing... \ 135Optimizing... - 136Optimizing... / 137Optimizing... - 138Optimizing... \ 139Optimizing... - 140Optimizing... / 141Optimizing... - 142Optimizing... \ 143Optimizing... - 144Optimizing... / 145Optimizing... - 146Optimizing... \ 147Optimizing... - 148Optimizing... / 149Optimizing... - 150Optimizing... \ 151Optimizing... - 152Optimizing... / 153Optimizing... - 154Optimizing... \ 155Optimizing... - 156Optimizing... / 157Optimizing... - 158Optimizing... \ 159Optimizing... - 160Optimizing... / 161Optimizing... - 162Optimizing... \ 163Optimizing... - 164Optimizing... / 165Optimizing... - 166Optimizing... \ 167Optimizing... - 168Optimizing... / 169Optimizing... - 170Optimizing... \ 171Optimizing... - 172Optimizing... / 173Optimizing... - 174Optimizing... \ 175Optimizing... - 176Optimizing... / 177Optimizing... - 178Optimizing... \ 179Optimizing... - 180Optimizing... / 181Optimizing... - 182Optimizing... \ 183Optimizing... - 184Optimizing... / 185Optimizing... - 186Optimizing... \ 187Optimizing... - 188Optimizing... / 189Optimizing... - 190Optimizing... \ 191Optimizing... - 192Optimizing... / 193Optimizing... - 194Optimizing... \ 195Optimizing... - 196Optimizing... / 197Optimizing... - 198Optimizing... \ 199Optimizing... - 200Optimizing... / 201Optimizing... - 202
-
-WARNING!!! Parameter optimization.final not specified. Default used instead: none
-Performed..............................: 203 function evaluations.
-Wrote tree to file ....................: out_tree1.dnd
-Log likelihood.........................: -4011.35300148693
-Full.theta.............................: 0.529441
-Full.theta1............................: 0.381342
-Full.theta2............................: 0.175206
-L95.alpha_1............................: 0
-L95.beta_1.............................: 0.518697
-L95.gamma_1............................: 0.541556
-L95.kappa_1............................: 0.330292
-L95.theta_1............................: 0.803479
-L95.alpha_2............................: 1
-L95.beta_2.............................: 0.12786
-L95.gamma_2............................: 1
-L95.kappa_2............................: 999.999
-L95.theta_2............................: 0.997896
-L95.alpha_3............................: 0.667436
-L95.beta_3.............................: 0
-L95.gamma_3............................: 0.618786
-L95.kappa_3............................: 2.10875
-L95.theta_3............................: 0.216616
-L95.alpha_4............................: 1
-L95.beta_4.............................: 1
-L95.gamma_4............................: 0.187458
-L95.kappa_4............................: 0.010716
-L95.theta_4............................: 0.107764
-L95.alpha_5............................: 0.740369
-L95.beta_5.............................: 0.258079
-L95.gamma_5............................: 0.950766
-L95.kappa_5............................: 0.235895
-L95.theta_5............................: 0.770898
-WARNING!!! This parameter has a value close to the boundary: L95.alpha_1(0).
-WARNING!!! This parameter has a value close to the boundary: L95.alpha_2(1).
-WARNING!!! This parameter has a value close to the boundary: L95.gamma_2(1).
-WARNING!!! This parameter has a value close to the boundary: L95.beta_3(0).
-WARNING!!! This parameter has a value close to the boundary: L95.alpha_4(1).
-WARNING!!! This parameter has a value close to the boundary: L95.beta_4(1).
-Output estimates to file...............: param_estimates.txt
-
-Posterior rate distribution for dataset:
-
-Pr(1.000000) = 1.000000
-
-
-Alignment information logfile..........: out.infos
-BppML's done. Bye.
-Total execution time: 0.000000d, 0.000000h, 0.000000m, 4.000000s.

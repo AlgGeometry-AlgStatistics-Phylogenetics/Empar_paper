@@ -1,0 +1,13 @@
+Model: Strand Symmetric
+Tree:
+nodes:   6
+nleaves: 4
+nedges:  5
+Edges:
+  (4, 5)  0.05
+  (4, 2)  2.5
+  (4, 3)  0.05
+  (5, 0)  2.5
+  (5, 1)  0.05
+Labels of the leaves: 1 2 3 4 
+

@@ -1,0 +1,41 @@
+# Log likelihood = -2491.47873041601633303799
+# Number of sites = 439
+
+# Substitution model parameters:
+nonhomogeneous=general
+nonhomogeneous.number_of_models=10
+
+model1=L95(alpha=0.107713887716,beta=0.000000000000,gamma=0.513364891331,kappa=5.276426662370,theta=0.881135686473)
+model1.nodes_id=0
+
+model2=L95(alpha=0.047251947939,beta=0.093524631799,gamma=1.000000000000,kappa=13.205769288841,theta=0.857084640507)
+model2.nodes_id=1
+
+model3=L95(alpha=0.722572806216,beta=0.000000000000,gamma=0.551216385884,kappa=8.984756739856,theta=0.656105741614)
+model3.nodes_id=2
+
+model4=L95(alpha=0.240396771160,beta=0.061551423748,gamma=0.000000000000,kappa=52.086671190582,theta=0.902223625259)
+model4.nodes_id=3
+
+model5=L95(alpha=0.285261033946,beta=0.000000000000,gamma=0.377880660021,kappa=3.583756012893,theta=0.198632893852)
+model5.nodes_id=4
+
+model6=L95(alpha=0.376156512047,beta=0.000000000000,gamma=0.528316129265,kappa=1.275827770383,theta=0.391716175462)
+model6.nodes_id=5
+
+model7=L95(alpha=0.000000000000,beta=0.000000000000,gamma=1.000000000000,kappa=999.999000000000,theta=0.925970647717)
+model7.nodes_id=6
+
+model8=L95(alpha=0.191202116334,beta=0.000000000000,gamma=0.345167150734,kappa=1.770353228117,theta=0.110772633432)
+model8.nodes_id=7
+
+model9=L95(alpha=0.338365993078,beta=1.000000000000,gamma=0.207455756825,kappa=1.274388498146,theta=0.102248318009)
+model9.nodes_id=8
+
+model10=L95(alpha=1.000000000000,beta=0.000000000000,gamma=0.196212102634,kappa=0.098247143969,theta=0.124181549842)
+model10.nodes_id=9
+
+# Root frequencies:
+nonhomogeneous.root_freq=Full(theta=0.958561129000,theta1=0.999998999999,theta2=0.318537327035)
+# Rate distribution parameters:
+rate_distribution=Constant()

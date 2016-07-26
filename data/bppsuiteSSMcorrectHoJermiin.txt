@@ -1,0 +1,97 @@
+#Advice: it is recommended to read the bppSuite and bppML manual to have details about all possible options...
+#Here is the address: http://home.gna.org/bppsuite/doc/
+
+#Global variable for this option file:
+#DATA=testCOaLA
+
+#Alphabet to use:
+alphabet=DNA
+
+#Parameters for the sequences file:
+input.sequence.file=Ho_Jermiin_2004_3rd.fasta
+input.sequence.format=Fasta
+#input.sequence.sites_to_use=all
+input.sequence.sites_to_use=nogap
+#input.sequence.max_gap_allowed=30%
+
+#Parameters for the rooted tree:
+init.tree=user 
+input.tree.file=treecorrectHoJermiin.txt
+#This is ((1,2),3,4)
+input.tree.format=Newick 
+#init.brlen.method=Input 
+init.brlen.method=Equal
+
+#Model settings:
+#one model per branch:
+#nonhomogeneous=one_per_branch
+nonhomogeneous=general
+
+#name of the model. The initFreqs parameter is set to 'observed' so that
+#the setFreqsFrom data function is called to compute the COA.
+#Here, only one axis position per branch and on the root is optimized (nbrAxes=1).
+
+#The General Time-Reversible 
+#GTR(a={real>0}, b={real>0}, c={real>0}, d={real>0}, e={real>0},
+#theta={real]0,1[}, theta1={real]0,1[}, theta2={real]0,1[},
+#useObservedFreqs={boolean}, useObservedFreqs.pseudoCount={int>0})
+
+#b=0.5,c=0.5,d=0.5,e=0.5
+
+#output.tree_ids.file = ids_tree.txt
+
+#I use a trivalent tree, only 5 nodes
+nonhomogeneous.number_of_models =10
+
+#I use SSM model of Lobry95 which coincides with SSM
+model1=L95()
+model2=L95()
+model3=L95()
+model4=L95()
+model5=L95()
+model6=L95()
+model7=L95()
+model8=L95()
+model9=L95()
+model10=L95()
+
+# useObservedFreqs={boolean} <--- aquest parametre dins del model diu que esta deprecated 
+# i que fem servir initFreqs
+
+#initFreqs=Uniform
+
+#initFreqs=Constant
+initFreqs=Full(init=observed)
+nonhomogeneous.root_freq=Full(init=observed)
+#nonhomogeneous.root_freq=Full(init=balanced)
+
+#rate across site variation
+rate_distribution=Constant
+#rate_distribution=Uniform
+#The model is stationary:
+nonhomogeneous.stationarity=no
+
+#The likelihood recursion is set to 'simple', to save time calculation:
+likelihood.recursion=simple 
+likelihood.recursion_simple.compression=recursive
+
+#Optimization settings (see http://home.gna.org/bppsuite/doc/Estimation.html#Estimation):
+optimization=FullD(derivatives=Newton)
+#The backup file allows to store parameter values during calculation. 
+#If the program stops for any reason, the optimization can re-start from these backup values.
+#The file is deleted once bppml reached convergence. 
+#optimization.backup.file=$(DATA).backup 
+
+optimization.max_number_f_eval=1000
+optimization.tolerance=1e-5 
+#optimization.message_handler=$(DATA).messages 
+#optimization.profiler=$(DATA).profile 
+
+optimization.reparametrization=no 
+optimization.topology=no
+
+output.tree.file=out_tree1.dnd 
+output.tree.format=Newick 
+output.infos=out.infos 
+output.estimates=out_bppcorrectHoJermiin.txt
+

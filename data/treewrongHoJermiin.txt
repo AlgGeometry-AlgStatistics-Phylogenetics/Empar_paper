@@ -1,1 +1,0 @@
-((((Mus_muscu, Rattus_no),Cricetulu),Drosophil),(Octopus_d,Heliothis));

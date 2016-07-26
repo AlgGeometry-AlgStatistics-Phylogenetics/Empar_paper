@@ -1,2 +1,10 @@
-# Empar_paper
-data generating scripts and additional docs for Empar
+# re-vitalizing Empar
+data, script used to generate it and the results of the tests
+
+#Phylogenies
+
+#Settings
+
+#Results
+
+#Notes

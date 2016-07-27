@@ -14,7 +14,7 @@ my $l1;
 
 my $b=$ARGV[1];
 
-    my $filer='outbppml_SSMGenNonh_b'.$b.'length'.$length;
+    my $filer='outbppml_SSM_b'.$b.'length'.$length;
 open(OUTR,">", $filer);
 
 

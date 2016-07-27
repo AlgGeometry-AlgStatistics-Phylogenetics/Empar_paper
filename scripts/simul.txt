@@ -1,4 +1,4 @@
-Model: Strand Symmetric
+Model: Kimura 81
 Tree:
 nodes:   6
 nleaves: 4

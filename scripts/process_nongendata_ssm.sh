@@ -4,7 +4,7 @@ MOD=ssm
 
 ITER=99 # number of data sets
 bl=95 #
-bl=250
+#bl=250
 
 #prep output files
 OUT_lik='likel_nongenh_'$bl'_'$MOD'.txt'

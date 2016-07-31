@@ -2,9 +2,9 @@
 
 MOD=ssm
 
-ITER=99 # number of data sets
-#bl=95 #
-bl=250
+ITER=99# number of data sets
+bl=95 #
+#bl=250
 
 #prep output files
 OUT_lik='likel_bpp_'$bl'_'$MOD'.txt'
@@ -20,6 +20,7 @@ touch $OUT_iter
 touch $OUT_time
 
 # run from within the scripts folder
+
 for i in $(seq 0 1 $ITER)
 do
   #extract a single file from tar

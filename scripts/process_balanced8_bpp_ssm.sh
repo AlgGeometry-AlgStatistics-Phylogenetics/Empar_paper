@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# data in Empar_paper/data/simul_balanc4bppSSM/bppssmlength1000_b100.tar
+# data in Empar_paper/data/simul_balanc8bppSSM/bppssmlength1000_b100.tar
 #bppssmlength1000_b100_num97.fa
 
 MOD=ssm
@@ -9,10 +9,10 @@ ITER=2 # number of data sets
 bl=100
 
 #prep output files
-OUT_lik='likel_balanced4_bpp_'$bl'_'$MOD'_E.txt'
-OUT_iter='iter_balanced4_bpp_'$bl'_'$MOD'_E.txt'
-OUT_time='time_balanced4_bpp_'$bl'_'$MOD'_E.txt'
-OUT_nc='neg_cases_balanced4_bpp_'$bl'_'$MOD'_E.txt'
+OUT_lik='likel_balanced8_bpp_'$bl'_'$MOD'_E.txt'
+OUT_iter='iter_balanced8_bpp_'$bl'_'$MOD'_E.txt'
+OUT_time='time_balanced8_bpp_'$bl'_'$MOD'_E.txt'
+OUT_nc='neg_cases_balanced8_bpp_'$bl'_'$MOD'_E.txt'
 
 [[ -f $OUT_lik ]] && rm -f $OUT_lik
 [[ -f $OUT_iter ]] && rm -f $OUT_iter
@@ -29,8 +29,8 @@ touch $OUT_nc
 for i in $(seq 0 1 $ITER)
 do
   #extract a single file from tar
-  tar -xvf ../data/simul_balanc4bppSSM/bppssmlength1000_b$bl.tar bppssmlength1000_b$bl\_num$i.fa
-  ./main ../data/trees/treeE.tree bppssmlength1000_b$bl\_num$i.fa $MOD > out.txt
+  tar -xvf ../data/simul_balanc8bppSSM/bppssmlength1000_b$bl.tar bppssmlength1000_b$bl\_num$i.fa
+  ./main ../data/trees/treeE8.tree bppssmlength1000_b$bl\_num$i.fa $MOD > out.txt
   cat out.txt | grep Likelihood  | cut -d':' -f2  | xargs >> $OUT_lik
   cat out.txt | grep Iter | cut -d':' -f2 | xargs >> $OUT_iter
   cat out.txt | grep Time  | cut -d':' -f2  | xargs >> $OUT_time
@@ -41,7 +41,7 @@ do
   rm bppssmlength1000_b$bl\_num$i.fa
 
 done
-mv $OUT_time ../results/ssm/bpp_data/balanc4bppdata/.
-mv $OUT_lik ../results/ssm/bpp_data/balanc4bppdata/.
-mv $OUT_iter ../results/ssm/bpp_data/balanc4bppdata/.
-mv $OUT_nc ../results/ssm/bpp_data/balanc4bppdata/.
+mv $OUT_time ../results/ssm/bpp_data/balanc8bppdata/.
+mv $OUT_lik ../results/ssm/bpp_data/balanc8bppdata/.
+mv $OUT_iter ../results/ssm/bpp_data/balanc8bppdata/.
+mv $OUT_nc ../results/ssm/bpp_data/balanc8bppdata/.

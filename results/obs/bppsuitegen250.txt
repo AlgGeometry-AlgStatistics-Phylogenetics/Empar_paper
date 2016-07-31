@@ -1,0 +1,109 @@
+#Advice: it is recommended to read the bppSuite and bppML manual to have details about all possible options...
+#Here is the address: http://home.gna.org/bppsuite/doc/
+
+#Global variable for this option file:
+#DATA=testCOaLA
+
+#Alphabet to use:
+alphabet=DNA
+
+#Parameters for the sequences file:
+output.sequence.file=generatedalign.fa
+output.sequence.format=Fasta
+#input.sequence.sites_to_use=all
+#input.sequence.sites_to_use=nogap
+#input.sequence.max_gap_allowed=30%
+
+number_of_sites=1000
+
+#Parameters for the rooted tree:
+init.tree=user 
+input.tree.file=top1_length250.tree
+#This is ((1,2),3,4)
+input.tree.format=Newick 
+
+
+#Model settings:
+#one model per branch:
+#nonhomogeneous=one_per_branch
+nonhomogeneous=general
+
+#name of the model. The initFreqs parameter is set to 'observed' so that
+#the setFreqsFrom data function is called to compute the COA.
+#Here, only one axis position per branch and on the root is optimized (nbrAxes=1).
+
+#The General Time-Reversible 
+#GTR(a={real>0}, b={real>0}, c={real>0}, d={real>0}, e={real>0},
+#theta={real]0,1[}, theta1={real]0,1[}, theta2={real]0,1[},
+#useObservedFreqs={boolean}, useObservedFreqs.pseudoCount={int>0})
+
+#b=0.5,c=0.5,d=0.5,e=0.5
+
+#output.tree_ids.file = ids_tree.txt
+
+#I use a trivalent tree, only 5 nodes
+nonhomogeneous.number_of_models =5
+
+#I use SSM model of Lobry95 which coincides with SSM
+
+#nonhomogeneous.root_freq=Full(init=balanced)
+nonhomogeneous.root_freq=Full(theta1=0.35,theta2=0.15, theta3=0.15)
+
+model1=L95(alpha=0.05,beta=0.3,gamma=0.761493930716,kappa=0.115595740375,theta=0.794107255606,theta1=0.2,theta2=0.15)
+
+
+model2=L95(alpha=0.966230649228,beta=0.071069624213,gamma=0.1,kappa=5.936979091862,theta=0.442748989003,theta1=0.2,theta2=0.15)
+
+
+model3=L95(alpha=0.366815882293,beta=0.316695070715,gamma=0.7,kappa=2.494488447301,theta=0.487210222138,theta1=0.14,theta2=0.25)
+
+
+model4=L95(alpha=1.02,beta=1.5,gamma=0.828035511809,kappa=0.053518807094,theta=0.120804501066,theta1=0.1,theta2=0.45)
+
+
+model5=L95(alpha=0.300376070923,beta=0.8,gamma=0.899597006347,kappa=0.151821536111,theta=0.717513963189,theta1=0.19,theta2=0.22)
+
+
+
+
+
+# useObservedFreqs={boolean} <--- aquest parametre dins del model diu que esta deprecated 
+# i que fem servir initFreqs
+
+#initFreqs=Uniform
+
+#initFreqs=Constant
+initFreqs=Full(init=observed)
+#nonhomogeneous.root_freq=Full(init=observed)
+#nonhomogeneous.root_freq=Full(init=balanced)
+
+#rate across site variation
+rate_distribution=Constant
+#rate_distribution=Uniform
+#The model is stationary:
+nonhomogeneous.stationarity=no
+
+#The likelihood recursion is set to 'simple', to save time calculation:
+#likelihood.recursion=simple 
+#likelihood.recursion_simple.compression=recursive
+
+#Optimization settings (see http://home.gna.org/bppsuite/doc/Estimation.html#Estimation):
+#optimization=FullD(derivatives=Newton)
+#The backup file allows to store parameter values during calculation. 
+#If the program stops for any reason, the optimization can re-start from these backup values.
+#The file is deleted once bppml reached convergence. 
+#optimization.backup.file=$(DATA).backup 
+
+#optimization.max_number_f_eval=1000
+#optimization.tolerance=1e-5 
+#optimization.message_handler=$(DATA).messages 
+#optimization.profiler=$(DATA).profile 
+
+#optimization.reparametrization=no 
+#optimization.topology=no
+
+#output.tree.file=out_tree1.dnd 
+#output.tree.format=Newick 
+#output.infos=out.infos 
+#output.estimates=param_estimates.txt
+
